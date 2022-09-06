@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../partial/index.css">
+    <title>Gold GYM</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .popular-classes {
+            margin-bottom: -3rem;
+            color: white;
+        }
+        .working-hours h1{
+            font-size: 3vw;
+        }
+        .first{
+            margin-top: 1rem;
+        }
+        .included{
+            margin-bottom: 2rem;
+        }
+        .ready-for-change {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar-div">
+            <nav class="navbar">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">&#9776;</label>
+                <label for="#" class="logo"><a href="index" class="goldgym">Gold Gym</a></label>
+                <ul class="nav-ul">
+                    <li><a href="index-admin" class="active">Home</a></li>
+                    <li><a href="classes-admin">Classes</a></li>
+                    <li><a href="personal-trainers-admin">Personal Workouts</a></li>
+                    <li><a href="prices-admin">Prices and Plans</a></li>
+                    <li><a href="schedule-admin">Schedule</a></li>
+                    <li><a href="learners-admin">Learners</a></li>
+                    <li><a href="logout">Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    <h1 class="popular-classes">PRICES & PLANS</h1>
+    <div class="end">
+        <div class="working-hours">
+            <h1 class="first">BASIC             30$</h1>
+            <p class="included">INCLUDED:</p>
+            <p>• 2x group workouts of your choice</p>
+            <p>• Unlimited gym access</p>
+            <p>• Personal workout</p>
+        </div>
+        <div class="working-hours">
+            <h1>UNLIMITED            30$</h1>
+            <p class="included">INCLUDED:</p>
+            <p>• Unlimited group workouts of your choice</p>
+            <p>• Unlimited gym access</p>
+            <p>• 3x personal workouts</p>
+            <p>• Personal nutrition plan</p>
+        </div>
+    </div>
+
+    <div class="ready-for-change">
+        <h1 id="ready">ARE YOU READY FOR CHANGES?</h1>
+        <form action="/signup">
+        <button class="make-it-happen">MAKE IT HAPPPEN</button>
+        </form>
+    </div>
+    {{>end}}
+
+</body>
+
+</html>

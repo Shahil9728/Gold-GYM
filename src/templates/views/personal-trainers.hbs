@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../partial/index.css">
+    <title>Gold GYM</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .aboutgold {
+            background-color: black;
+        }
+
+        .aboutclass {
+            background: none;
+            background-color: black;
+             !important
+        }
+
+        .schedule-btn {
+            margin-top: -1rem;
+        }
+
+        #about-head,
+        #class-head {
+            margin-top: 2rem;
+            font-size: 3vw;
+        }
+
+        .aboutp {
+            font-size: 1.1vw;
+        }
+
+        .popular-classes {
+            color: white;
+        }
+
+        .ready-for-change {
+            background-color: white;
+        }
+        .email{
+            text-decoration: none;
+            border: none;
+            border-bottom: none;
+        }
+
+        @media (max-width:952px) {
+            .about-first-div img {
+                padding: 1rem 1rem 1rem 1rem;
+                object-fit: cover;
+            }
+
+            #about-head,
+            #class-head {
+                font-size: 4vw;
+            }
+
+            .popular-classes {
+                margin-bottom: -10rem;
+            }
+            .aboutp {
+                font-size: 2vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+    <h1 class="popular-classes">PERSONAL TRAINERS</h1>
+    <div class="about">
+        <div class="aboutgold">
+            <div class="about-content">
+                <h1 id="about-head">MATTHEW HERON</h1>
+                <div class="aboutp">
+                    <p>Mathew is the expert to talk to if your fitness goal is to lose weight or tone up. Working
+                        clients through high-intensity workouts and tailored fitness plans, Mat doesn’t take no for an
+                        answer when it comes to your goals. </p>
+                    <p id="nextp">With a background in sports psychology and physical therapy, Matt understands how the
+                        mind and body need to work together for you to achieve success.</p>
+                </div>
+                <a href="mailto:matthewheron@gmail.com" class="email">
+                <button class="schedule-btn">SCHEDULE WORKOUT</button>
+                </a>
+            </div>
+            <div class="about-first-div">
+                <img src="../images/matthew-heron.jpg" alt="">
+            </div>
+        </div>
+        <div class="aboutclass">
+            <div class="about-first-div">
+                <img src="../images/john-heeron.jpg" alt="">
+            </div>
+            <div class="aboutclass-content">
+                <h1 id="class-head">JOHN HEERON</h1>
+                <div class="aboutp">
+                    <p>Whether you’re new to boxing or a seasoned fighter, John can teach you a thing or two about
+                        keeping fit for the ring and understanding your opponent.</p>
+                    <p id="nextp2">While he comes from the world of professional boxing, John takes a holistic approach
+                        to fitness, and is just as likely to throw you into a yoga class as he is to throw you around
+                        the boxing ring.</p>
+                </div>
+                <a href="mailto:johnheeron@gmail.com" class="email">
+                <button class="schedule-btn">SCHEDULE WORKOUT</button>
+                </a>
+            </div>
+        </div>
+        <div class="aboutgold">
+            <div class="about-content">
+                <h1 id="about-head">INNA GEBROW</h1>
+                <div class="aboutp">
+                    <p>Are you looking to improve your and joint strength? Then you should get in touch within Inna for
+                        a consultation. </p>
+                    <p id="nextp">A highly trained instructor for both yoga and pilates, Inna can help you better
+                        understand your own body, and will help guide you towards your goals in a way that works with
+                        your body instead of against it.</p>
+                </div>
+                <a href="mailto:innagebrow@gmail.com" class="email">
+                <button class="schedule-btn">SCHEDULE WORKOUT</button>
+                </a>
+            </div>
+            <div class="about-first-div">
+                <img src="../images/inna-gebrow.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ready-for-change">
+        <h1 id="ready">ARE YOU READY FOR CHANGES?</h1>
+        <form action="/signup">
+        <button class="make-it-happen">MAKE IT HAPPPEN</button>
+        </form>
+    </div>
+    {{>end}}
+</body>
+
+</html>

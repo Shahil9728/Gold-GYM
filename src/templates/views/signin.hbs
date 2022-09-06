@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../partial/index.css">
+    <title>Gold GYM</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .popular-classes {
+            margin-bottom: -3rem;
+            color: white;
+        }
+
+        .contact {
+            margin-left: 4rem;
+        }
+
+        .heading {
+            margin-bottom: .5rem;
+        }
+        .heading-first{
+            margin-bottom: 0.5rem;
+            margin-top: 14rem;
+        }
+        .form-control {
+            height: 40px;
+            padding-left: 0.5rem;
+            width: 400px;
+            color: black;
+            border: none;
+            outline: none;
+            margin-bottom: 1.5rem;
+        }
+        button{
+            margin-left: 4rem;
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+    {{#if message}}
+    <div style="text-align: center" class="alert alert-{{message.type}}">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong>{{message.intro}}</strong> {{message.message}}
+    </div>
+    {{/if}}
+
+    <h1 class="popular-classes">SIGN IN</h1>
+    <form action="/signin" method="POST" onsubmit="return validation()">
+    <div class="contact">
+        <p class="heading-first">Email</p>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter Your Email" name="email">
+        <p class="heading">Password</p>
+        <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter Password" name="password">
+        <span id="password"></span>
+    </div>
+        <button type="submit" class="btn btn-primary">Log In</button>
+    </form>
+    {{>end}}
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>

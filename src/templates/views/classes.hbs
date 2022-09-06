@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../partial/index.css">
+    <title>Gold GYM</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .popular-classes {
+            color: white;
+            margin-top: 3rem;
+        }
+        .image-sub-line {
+            color: white;
+            cursor: pointer;
+        }
+        .service-img-first img {
+            cursor: default;
+        }
+        .ready-for-change{
+            background-color: white;
+        }
+        .services{
+            margin-bottom: 6rem
+        }  
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="services">
+        <h1 class="popular-classes">CLASSES</h1>
+        <div class="service-img">
+            <div class="service-img-first">
+                <img src="../images/callenetics.jpg" alt="">
+                <p class="image-sub-line">Callenetics</p>
+            </div>
+            <div class="service-img-first">
+                <img src="../images/air-yoga1.jpg" alt="">
+                <p class="image-sub-line">Airyoga</p>
+            </div>
+            <div class="service-img-first">
+                <img src="../images/sports-dance.jpg" alt="">
+                <p class="image-sub-line">Sports Dance</p>
+            </div>
+            <div class="service-img-first">
+                <img src="../images/lifting.jpg" alt="">
+                <p class="image-sub-line">Lifting</p>
+            </div>
+            <div class="service-img-first">
+                <img src="../images/cardio-boxing.jpg" alt="">
+                <p class="image-sub-line">Cardio Boxing</p>
+            </div>
+            <div class="service-img-first">
+                <img src="../images/cardio.jpg" alt="">
+                <p class="image-sub-line">Cardio</p>
+            </div>
+            <div class="service-img-first">
+                <img src="../images/press&back.jpg" alt="">
+                <p class="image-sub-line">Press & Back</p>
+            </div>
+            <div class="service-img-first">
+                <img src="../images/body-building.jpg" alt="">
+                <p class="image-sub-line">Body Building</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ready-for-change">
+        <h1 id="ready">ARE YOU READY FOR CHANGES?</h1>
+        <form action="/signup">
+        <button class="make-it-happen">MAKE IT HAPPPEN</button>
+        </form>
+    </div>
+
+    {{>end}}
+
+</body>
+
+</html>

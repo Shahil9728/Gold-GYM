@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../partial/index.css">
+    <title>Gold GYM</title>
+
+    {{!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> --}}
+
+    <!-- jQuery library -->
+    {{!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> --}}
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .popular-classes {
+            margin-bottom: -3rem;
+            color: white;
+        }
+
+        .contact {
+            margin-left: 4rem;
+        }
+
+        .heading-first {
+            margin-bottom: .5rem;
+            margin-top: 14rem;
+        }
+
+        .form-control {
+            height: 40px;
+            padding-left: 0.5rem;
+            width: 400px;
+            color: black;
+            border: none;
+            outline: none;
+            margin-bottom: 1.5rem;
+        }
+
+        button {
+            margin-left: 0rem;
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+
+        #signin {
+            margin-top: 2rem;
+            margin-left: 4rem;
+        }
+
+        span {
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+        }
+
+            {
+                {
+                 !-- #submitbtn {
+                    word-spacing: 2px;
+                    padding: 15px 30px;
+                    font-size: 2vw;
+                    background-color: orangered;
+                    cursor: pointer;
+                    border: none;
+                    margin-top: 2rem;
+                    font-size: 1.2rem;
+                }
+
+                #submitbtn:hover {
+                    background-color: rgba(255, 68, 0, 0.696);
+                    transition: 0.5s all;
+                }
+
+                --
+            }
+        }
+
+        .container {
+            margin-top: 10rem;
+            display: inline-block;
+        }
+
+        form {
+            background-color: black;
+        }
+
+        .form-group {
+            background-color: black;
+        }
+
+        input {
+            text-transform: capitalize;
+            background-color: gray;
+        }
+        #emails{
+            text-transform: none;
+        }
+        ::placeholder {
+            color: rgb(80, 79, 79);
+        }
+
+        p {
+            margin-left: 4rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    {{>navbar}}
+    <h1 class="popular-classes">SIGN UP FOR A WORKOUT</h1>
+    <div class="container"><br>
+
+        <div class="contact">
+
+            <form action="/signup" method="POST" onsubmit="return validation()" class="bg-light">
+
+                <div class="form-group">
+                    <label for="user" class="font-weight-bold"> Name* </label><br>
+                    <input type="text" name="name" class="form-control" id="user" autocomplete="off"
+                        placeholder="Your name"><br>
+                    <span id="username" class="text-danger font-weight-bold"> </span>
+                </div>
+
+                <div class="form-group">
+                    <label class="font-weight-bold"> Email* </label><br>
+                    <input type="text" name="email" class="form-control" id="emails" autocomplete="off"
+                        placeholder="Your email address"><br>
+                    <span id="emailids" class="text-danger font-weight-bold"> </span>
+                </div>
+
+                {{!-- <div class="form-group">
+                    <label class="font-weight-bold"> Password* </label><br>
+                    <input type="password" name="password" class="form-control" id="pass" autocomplete="off"
+                        placeholder="Enter Password">
+                    <br><span id="passwords" class="text-danger font-weight-bold"> </span>
+                </div>
+
+                <div class="form-group">
+                    <label class="font-weight-bold"> Confirm Password* </label><br>
+                    <input type="password" name="confirmpassword" class="form-control" id="conpass" autocomplete="off"
+                        placeholder="Confirm Password"><br>
+                    <span id="confrmpass" class="text-danger font-weight-bold"> </span>
+                </div> --}}
+
+                <div class="form-group">
+                    <label class="font-weight-bold"> Mobile Number* </label><br>
+                    <input type="number" name="number" class="form-control" id="mobileNumber" autocomplete="off"
+                        placeholder="Enter Mobile Number"><br>
+                    <span id="mobileno" class="text-danger font-weight-bold"> </span>
+                </div>
+
+                <div class="form-group">
+                    <label class="font-weight-bold"> Message </label><br>
+                    <input type="textarea" name="message" class="form-control" id="message" autocomplete="off"
+                        placeholder="Write something here"><br>
+                </div>
+                <button type="submit" id="submitbtn">Join Now</button>
+                {{!-- <input type="submit" name="submit" id="submitbtn" value="Submit" class="btn btn-success"
+                    autocomplete="off"> --}}
+            </form><br><br>
+        </div>
+    </div>
+    <form action="/signin">
+        <p>If you have an account</p>
+        <button type="submit" id="signin">Sign in</button>
+    </form>
+
+    {{>end}}
+
+
+    <script type="text/javascript">
+
+
+        function validation() {
+
+            var user = document.getElementById('user').value;
+            {{!-- var pass = document.getElementById('pass').value;
+            var confirmpass = document.getElementById('conpass').value; --}}
+            var mobileNumber = document.getElementById('mobileNumber').value;
+            var emails = document.getElementById('emails').value;
+
+
+
+
+
+            if (user == "") {
+                document.getElementById('username').innerHTML = " ** Please fill the username field";
+                return false;
+            }
+            if ((user.length <= 2) || (user.length > 20)) {
+                document.getElementById('username').innerHTML = " ** Username lenght must be between 2 and 20";
+                return false;
+            }
+            if (!isNaN(user)) {
+                document.getElementById('username').innerHTML = " ** only characters are allowed";
+                return false;
+            }
+
+
+
+            if (emails == "") {
+                document.getElementById('emailids').innerHTML = " ** Please fill the email idx` field";
+                return false;
+            }
+            if (emails.indexOf('@') <= 0) {
+                document.getElementById('emailids').innerHTML = " ** @ Invalid Position";
+                return false;
+            }
+
+            if ((emails.charAt(emails.length - 4) != '.') && (emails.charAt(emails.length - 3) != '.')) {
+                document.getElementById('emailids').innerHTML = " ** . Invalid Position";
+                return false;
+            }
+
+
+
+            {{!-- if (pass == "") {
+                document.getElementById('passwords').innerHTML = " ** Please fill the password field";
+                return false;
+            }
+            if ((pass.length <= 5) || (pass.length > 20)) {
+                document.getElementById('passwords').innerHTML = " ** Passwords lenght must be between  5 and 20";
+                return false;
+            }
+
+
+            if (pass != confirmpass) {
+                document.getElementById('confrmpass').innerHTML = " ** Password does not match the confirm password";
+                return false;
+            } --}}
+
+
+
+            {{!-- if (confirmpass == "") {
+                document.getElementById('confrmpass').innerHTML = " ** Please fill the confirmpassword field";
+                return false;
+            } --}}
+
+
+
+
+            if (mobileNumber == "") {
+                document.getElementById('mobileno').innerHTML = " ** Please fill the mobile NUmber field";
+                return false;
+            }
+            if (isNaN(mobileNumber)) {
+                document.getElementById('mobileno').innerHTML = " ** user must write digits only not characters";
+                return false;
+            }
+            if (mobileNumber.length != 10) {
+                document.getElementById('mobileno').innerHTML = " ** Mobile Number must be 10 digits only";
+                return false;
+            }
+            alert("Login Successfully");
+        }
+
+    </script>
+</body>
+
+</html>

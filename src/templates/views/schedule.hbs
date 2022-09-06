@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../partial/index.css">
+    <title>Gold GYM</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .popular-classes {
+            margin-bottom: -3rem;
+            color: white;
+        }
+        .working-hours h1{
+            font-size: 3vw;
+        }
+        .first{
+            margin-top: 1rem;
+        }
+        .included-second{
+            margin-bottom: 2rem;
+        }
+        .ready-for-change {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+    <h1 class="popular-classes">SCHEDULE</h1>
+    <div class="end">
+        <div class="working-hours">
+            <h1>MONDAY</h1>
+            <p class="included">8:00 - 8:50</p>
+            <p class="included-second">Air yoga</p>
+            <p>2:00 - 2:45</p>
+            <p>Body building</p>
+        </div>
+        <div class="working-hours">
+            <h1>TUESDAY</h1>
+            <p class="included">4:30 - 5:30</p>
+            <p class="included-second">Air yoga</p>
+            <p>5:30 - 6:30</p>
+            <p>Body building</p>
+        </div>
+        <div class="working-hours">
+            <h1>WEDNESDAY</h1>
+            <p class="included">8:00 - 8:50</p>
+            <p class="included-second">Air yoga</p>
+            <p>2:00 - 2:45</p>
+            <p>Body building</p>
+        </div>
+        <div class="working-hours">
+            <h1>THURSDAY</h1>
+            <p class="included">4:30 - 5:30</p>
+            <p class="included-second">Air yoga</p>
+            <p>5:30 - 6:30</p>
+            <p>Body building</p>
+        </div>
+    </div>
+
+    <div class="ready-for-change">
+        <h1 id="ready">ARE YOU READY FOR CHANGES?</h1>
+        <form action="/signup">
+        <button class="make-it-happen">MAKE IT HAPPPEN</button>
+        </form>
+    </div>
+    {{>end}}
+
+</body>
+
+</html>
