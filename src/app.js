@@ -9,25 +9,9 @@ const mongoose = require('mongoose')
 bodyparser = require("body-parser");
 app.use(bodyparser.urlencoded({ extended: true }));
 const port = process.env.PORT || 5000
-// const ejs = require('ejs');
-// const dbconnect = require('../../../Node.js/Code Step by Step/12Mongo');
-// const { ALL } = require('dns');
-
 
 const templatepath = path.join(__dirname, '../src/templates/views')
 const partialpath = path.join(__dirname, "../src/templates/partial");
-
-
-// const html=require('html')
-// app.set('view engine', 'html')
-// app.set('views', templatepath)
-// const serverless = require('serverless-http');
-// const router = express.Router();
-// app.use('/.netlify/functions/server', router); 
-// module.exports = app;
-// module.exports.handler = serverless(app);
-
-
 
 app.use(express.json());
 app.use('/css', express.static(path.join(__dirname, '../node_modules/bootstrap/dist/css')))
