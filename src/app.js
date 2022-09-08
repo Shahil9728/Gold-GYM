@@ -10,6 +10,8 @@ bodyparser = require("body-parser");
 app.use(bodyparser.urlencoded({ extended: true }));
 const port = process.env.PORT || 5000
 
+require('dotenv').config();
+
 const templatepath = path.join(__dirname, '../src/templates/views')
 const partialpath = path.join(__dirname, "../src/templates/partial");
 

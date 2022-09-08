@@ -142,7 +142,7 @@
                     <span id="emailids" class="text-danger font-weight-bold"> </span>
                 </div>
 
-                <div class="form-group">
+                {{!-- <div class="form-group">
                     <label class="font-weight-bold"> Password* </label><br>
                     <input type="password" name="password" class="form-control" id="pass" autocomplete="off"
                         placeholder="Enter Password">
@@ -154,7 +154,7 @@
                     <input type="password" name="confirmpassword" class="form-control" id="conpass" autocomplete="off"
                         placeholder="Confirm Password"><br>
                     <span id="confrmpass" class="text-danger font-weight-bold"> </span>
-                </div>
+                </div> --}}
 
                 <div class="form-group">
                     <label class="font-weight-bold"> Mobile Number* </label><br>
@@ -169,8 +169,6 @@
                         placeholder="Write something here"><br>
                 </div>
                 <button type="submit" id="submitbtn">Join Now</button>
-                {{!-- <input type="submit" name="submit" id="submitbtn" value="Submit" class="btn btn-success"
-                    autocomplete="off"> --}}
             </form><br><br>
         </div>
     </div>
@@ -228,7 +226,7 @@
 
 
 
-            if (pass == "") {
+            {{!-- if (pass == "") {
                 document.getElementById('passwords').innerHTML = " ** Please fill the password field";
                 return false;
             }
@@ -248,7 +246,7 @@
             if (confirmpass == "") {
                 document.getElementById('confrmpass').innerHTML = " ** Please fill the confirmpassword field";
                 return false;
-            }
+            } --}}
 
 
 
