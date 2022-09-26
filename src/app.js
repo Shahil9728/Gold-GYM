@@ -21,7 +21,6 @@ app.use('/js', express.static(path.join(__dirname, '../node_modules/bootstrap/di
 app.use('/jq', express.static(path.join(__dirname, '../node_modules/jquery/dist')))
 app.use('/images', express.static(path.join(__dirname, '/templates/images')))
 app.use('/partial', express.static(path.join(__dirname, '../styles/partial')))
-app.use('/images', express.static(path.join(__dirname, '/templates/images')))
 
 app.set('view engine', 'hbs')
 app.set('views', templatepath)
