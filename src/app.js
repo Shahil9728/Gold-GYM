@@ -20,7 +20,7 @@ app.use('/css', express.static(path.join(__dirname, '../node_modules/bootstrap/d
 app.use('/js', express.static(path.join(__dirname, '../node_modules/bootstrap/dist/js')))
 app.use('/jq', express.static(path.join(__dirname, '../node_modules/jquery/dist')))
 app.use('/images', express.static(path.join(__dirname, '/templates/images')))
-app.use('/partial', express.static(path.join(__dirname, '../styles/partial')))
+app.use('/partial', express.static(path.join(__dirname, '../styles/partials')))
 
 app.set('view engine', 'hbs')
 app.set('views', templatepath)
@@ -92,7 +92,6 @@ var schema = new mongoose.Schema({
     name: String,
     email: String,
     number: String,
-    // password: String,
     message: String,
 })
 var detailsModel = mongoose.model("users", schema);
