@@ -1,6 +1,5 @@
 const mongoose = require('mongoose')
-mongoose.set('strictQuery', false);
-mongoose.connect('mongodb://localhost:27017/goldgym',{
+mongoose.connect('mongodb+srv://Shahil:Shahil123@cluster0.fedo0nq.mongodb.net/Gold-GYM?retryWrites=true&w=majority',{
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(()=>{
