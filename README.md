@@ -15,7 +15,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Shahil9728/heroku-web-hosting">
-    <img src="https://e7.pngegg.com/pngimages/925/96/png-clipart-bodybuilding-graphics-fitness-centre-logo-bodybuilding-physical-fitness-logo.png&width=222&height=227" alt="Logo" width="80" height="80">
+    <img src="" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Gold GYM</h3>
