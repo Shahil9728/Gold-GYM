@@ -11,7 +11,6 @@ app.use(bodyparser.urlencoded({ extended: true }));
 const port = process.env.PORT || 5000
 
 
-mongoose.set('strictQuery', false);
 require('dotenv').config();
 
 const templatepath = path.join(__dirname, '../src/templates/views')
