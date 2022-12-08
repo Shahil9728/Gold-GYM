@@ -15,7 +15,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Shahil9728/heroku-web-hosting">
-    <img src="https://bnz05pap002files.storage.live.com/y4m5ashMwpJC-4MN4wV30_FKqPnY3VrVNDUE6Jx2q6i541eemfH5SsRxmqtRRXmXd3_XbLKj_POi0nmGnWxHyNBpK8cUcKmrWlsqzmI7mUxYJDX2HfMtSe32rx_EaSDoWc_0IK69UfRYeg2Jc4pIv_Kn3CKqDrfuF5BwvL6Lq7d2NHCyS5EfD1t11Za4WQHPVmReiJWVNJVnJYo0f-Zi6FoovnDyzlu0XtErhwB6k7poVU?encodeFailures=1&width=222&height=227" alt="Logo" width="80" height="80">
+    <img src="https://e7.pngegg.com/pngimages/925/96/png-clipart-bodybuilding-graphics-fitness-centre-logo-bodybuilding-physical-fitness-logo.png&width=222&height=227" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Gold GYM</h3>
