@@ -15,7 +15,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Shahil9728/heroku-web-hosting">
-    <img src="" alt="Logo" width="80" height="80">
+    <img src="src/templates/images/pngegg.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Gold GYM</h3>
