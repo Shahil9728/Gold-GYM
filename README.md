@@ -53,7 +53,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![This is an image](https://bnz05pap002files.storage.live.com/y4m-1M2nrnjMJmmV3EflDWvld_a1fvP22dFhP_WLZub0SGucR5tONmFu-1YvzaH-Teh3XmdJ7X0gCcyS27GOrXjJZeOr9MuhXuNTgvyp3GfsDsnJ3gO63U4_xCisk4oXpRHrDfe5-Gucm_3fwok43KdSZmG3Ow14reT1wDIZknvaq9TuRKyb6ijrcMtKe5z_XKOjpq43w4VVZRhTHVsGP9mjQaxlB6sEwYuP1uWbS5U054?encodeFailures=1&width=957&height=434)
+![Alt image](src/templates/images/home1.png)
 
 
 In this project the website is built for the GYM enthusiasts and the owner of the GYM. The website allows the user to see all the machines available in the GYM and new user can easily join the GYM by filling the registration form. We have used the HTML, CSS and little bit of JavaScript along with the Monogdb Database and Node js. 
@@ -89,13 +89,13 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- IMAGES -->
 ## Project Screenshots
 
-![This is an image](https://bnz05pap002files.storage.live.com/y4mYRYHX20rp_383fcvQR9XgkfjmjCd2fI_Ry6bibN8TKhoBWVF47ZyzobjKK1hBhnTAYfCEg-lbrTgyT5s3Hl0VqeYJ-4689AUuz8uBgdztN0Fs2BaN8qxrqJ37G_WIQW1jtSlnTAsAeVtVn5Zma1VZRTTq6p4YinsmLtweGLVxWSvWi_MtTbhf8ZvKzqoL-m2-4agn3oAjIBSN7DYGq7dvWBcsyWeuB49W-5hnVmnn5w?encodeFailures=1&width=956&height=431)
+![Alt image](src/templates/images/home2.png)
 
 <br/>
 
-![This is an image](https://bnz05pap002files.storage.live.com/y4mlco2SneQM5fj5hk4inEkVDb-qUctQNphc29VaBaer14WYvpqR5YF-6lyu-FU0eUk1K_swBgdsgCfoOHiKmsg284pDQP9AMe4zB9uvaYZBSOIQDkied6veKSkgAHKHf6VoktBu3zwr7CFDrHg0fNmCDanNEZO6_mqHsuF_b7abSCB_7MuX2vO145cT2-T1nCg59MUrL1OQFAW6wPME4N2W9Q8FZ4B9hxO4Qb8SJyR0LA?encodeFailures=1&width=956&height=433)
+![Alt image](src/templates/images/home3.png)
 
-![This is an image](https://bnz05pap002files.storage.live.com/y4maL0axlQo_xeebAUX7-OPzvs_6nuloGqEvjFmc50-8-TIfdZPY2VUfXTNKb6s2GoaVSkJ0-5rC0iW_vgr6Orq8V09fFn1d-jyxp3rvuX98GTA_a8zK41-ocQTSeeE8BwVghlrwOFzWfMWNSFqZ0oKArjUTlCms_9dWi0Xd5aVdTikge5EpofFp-10jo5OhRbC_lIF_h6SRZtGz6_t_gVAxsJ55SgkwZCK3H_n73gWdvo?encodeFailures=1&width=956&height=437)
+![Alt image](src/templates/images/home4.png)
 
 <!-- CONTACT -->
 ## Contact
